@@ -52,12 +52,12 @@ const Gallery = () => {
               align: "start",
               loop: true,
             }}
-            className="w-full max-w-4xl"
+            className="w-full max-w-sm sm:max-w-2xl lg:max-w-4xl"
           >
             <CarouselContent>
               {galleryImages.map((image, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2">
+                <CarouselItem key={index} className="basis-full sm:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 sm:p-2">
                     <Dialog>
                       <DialogTrigger asChild>
                         <Card className="cursor-pointer border-0 shadow-card hover:shadow-elegant transition-smooth group">
@@ -72,7 +72,7 @@ const Gallery = () => {
                           </CardContent>
                         </Card>
                       </DialogTrigger>
-                      <DialogContent className="max-w-4xl">
+                      <DialogContent className="max-w-[90vw] sm:max-w-4xl">
                         <div className="relative">
                           <img
                             src={image}
@@ -86,24 +86,24 @@ const Gallery = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="hidden sm:flex" />
+            <CarouselNext className="hidden sm:flex" />
           </Carousel>
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="space-y-6 max-w-2xl mx-auto">
+        <div className="mt-12 sm:mt-16 text-center">
+          <div className="space-y-4 sm:space-y-6 max-w-2xl mx-auto">
             <h3 className="text-primary">Gostou do que viu?</h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
               Entre em contato conosco e adquira os produtos que mais se adequam 
               às suas necessidades.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://wa.me/5591982161215" className="btn-cta">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+              <a href="https://wa.me/5591982161215" className="btn-cta w-full sm:w-auto text-sm sm:text-base">
                 Ver todos os produtos
               </a>
-              <a href="https://wa.me/5591982161215" className="btn-outline">
+              <a href="https://wa.me/5591982161215" className="btn-outline w-full sm:w-auto text-sm sm:text-base">
                 Falar com especialista
               </a>
             </div>

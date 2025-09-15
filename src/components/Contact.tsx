@@ -45,31 +45,31 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
           {contactInfo.map((info, index) => (
             <Card key={index} className="border-0 shadow-card hover:shadow-elegant transition-smooth text-center">
-              <CardHeader className="space-y-4">
-                <div className="w-16 h-16 mx-auto bg-primary/10 rounded-2xl flex items-center justify-center">
-                  <info.icon className="w-8 h-8 text-primary" />
+              <CardHeader className="space-y-3 sm:space-y-4 p-4 sm:p-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <info.icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                 </div>
-                <CardTitle className="text-primary text-lg">
+                <CardTitle className="text-primary text-base sm:text-lg">
                   {info.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-2">
+              <CardContent className="space-y-1 sm:space-y-2 p-4 sm:p-6 pt-0">
                 {info.link ? (
                   <a 
                     href={info.link}
-                    className="block font-semibold text-foreground hover:text-primary transition-smooth"
+                    className="block font-semibold text-foreground hover:text-primary transition-smooth text-sm sm:text-base"
                   >
                     {info.content}
                   </a>
                 ) : (
-                  <p className="font-semibold text-foreground">
+                  <p className="font-semibold text-foreground text-sm sm:text-base">
                     {info.content}
                   </p>
                 )}
-                <p className="text-sm text-muted-foreground">
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   {info.description}
                 </p>
               </CardContent>
@@ -78,24 +78,24 @@ const Contact = () => {
         </div>
 
         {/* Contact CTAs */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
           {/* WhatsApp Card */}
           <Card className="border-0 shadow-card gradient-hero text-white">
-            <CardContent className="p-8 text-center space-y-6">
-              <div className="w-16 h-16 mx-auto bg-white/20 rounded-2xl flex items-center justify-center">
-                <Phone className="w-8 h-8 text-white" />
+            <CardContent className="p-6 sm:p-8 text-center space-y-4 sm:space-y-6">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto bg-white/20 rounded-2xl flex items-center justify-center">
+                <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
-              <div className="space-y-2">
-                <h3 className="text-white font-semibold">
+              <div className="space-y-1 sm:space-y-2">
+                <h3 className="text-white font-semibold text-lg sm:text-xl">
                   Fale conosco no WhatsApp
                 </h3>
-                <p className="text-white/80">
+                <p className="text-white/80 text-sm sm:text-base">
                   Atendimento rápido e personalizado para tirar suas dúvidas e fazer pedidos.
                 </p>
               </div>
               <Button variant="hero" size="lg" asChild className="w-full">
                 <a href="https://wa.me/5591982161215">
-                  <Phone className="w-4 h-4" />
+                  <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
                   Abrir WhatsApp
                 </a>
               </Button>
@@ -104,15 +104,15 @@ const Contact = () => {
 
           {/* Social Media Card */}
           <Card className="border-0 shadow-card">
-            <CardContent className="p-8 text-center space-y-6">
-              <div className="w-16 h-16 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
-                <Instagram className="w-8 h-8 text-white" />
+            <CardContent className="p-6 sm:p-8 text-center space-y-4 sm:space-y-6">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
+                <Instagram className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
-              <div className="space-y-2">
-                <h3 className="text-primary font-semibold">
+              <div className="space-y-1 sm:space-y-2">
+                <h3 className="text-primary font-semibold text-lg sm:text-xl">
                   Siga-nos no Instagram
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm sm:text-base">
                   Acompanhe nossas novidades, dicas e lançamentos de produtos.
                 </p>
               </div>
@@ -122,7 +122,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Instagram className="w-4 h-4" />
+                  <Instagram className="w-3 h-3 sm:w-4 sm:h-4" />
                   @janes26178
                 </a>
               </Button>
@@ -131,15 +131,15 @@ const Contact = () => {
         </div>
 
         {/* Business Info */}
-        <div className="mt-12 bg-secondary rounded-3xl p-8">
-          <div className="text-center space-y-4">
-            <h3 className="text-primary font-semibold">
+        <div className="mt-8 sm:mt-12 bg-secondary rounded-3xl p-6 sm:p-8">
+          <div className="text-center space-y-3 sm:space-y-4">
+            <h3 className="text-primary font-semibold text-lg sm:text-xl">
               Excelência Digital
             </h3>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs sm:text-sm text-muted-foreground">
               CNPJ: 038.071.992-41 | Belém do Pará, Brasil
             </p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs sm:text-sm text-muted-foreground">
               Especializada em produtos digitais de excelência
             </p>
           </div>

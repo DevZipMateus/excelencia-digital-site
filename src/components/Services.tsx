@@ -57,47 +57,47 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, index) => (
             <Card key={index} className="border-0 shadow-card hover:shadow-elegant transition-smooth group">
-              <CardHeader className="space-y-4">
+              <CardHeader className="space-y-3 sm:space-y-4 p-4 sm:p-6">
                 <div className="flex items-center justify-between">
-                  <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${service.color}/10 group-hover:${service.color}/20 transition-smooth`}>
-                    <service.icon className={`w-6 h-6 ${service.color.replace('bg-', 'text-')}`} />
+                  <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-2xl flex items-center justify-center ${service.color}/10 group-hover:${service.color}/20 transition-smooth`}>
+                    <service.icon className={`w-5 h-5 sm:w-6 sm:h-6 ${service.color.replace('bg-', 'text-')}`} />
                   </div>
                   <Badge variant="secondary" className="text-xs">
                     {service.badge}
                   </Badge>
                 </div>
-                <CardTitle className="text-primary group-hover:text-primary/80 transition-smooth">
+                <CardTitle className="text-primary group-hover:text-primary/80 transition-smooth text-lg sm:text-xl">
                   {service.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="space-y-4 sm:space-y-6 p-4 sm:p-6 pt-0">
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                   {service.description}
                 </p>
                 
-                <div className="space-y-3">
-                  <h4 className="text-sm font-semibold text-primary">Características:</h4>
-                  <ul className="space-y-2">
+                <div className="space-y-2 sm:space-y-3">
+                  <h4 className="text-xs sm:text-sm font-semibold text-primary">Características:</h4>
+                  <ul className="space-y-1 sm:space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center space-x-3 text-sm text-muted-foreground">
-                        <Star className="w-4 h-4 text-yellow-500 fill-current flex-shrink-0" />
+                      <li key={featureIndex} className="flex items-center space-x-2 sm:space-x-3 text-xs sm:text-sm text-muted-foreground">
+                        <Star className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-500 fill-current flex-shrink-0" />
                         <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="pt-4 space-y-3">
-                  <Button variant="cta" className="w-full" asChild>
+                <div className="pt-3 sm:pt-4 space-y-2 sm:space-y-3">
+                  <Button variant="cta" className="w-full text-sm sm:text-base" asChild>
                     <a href="https://wa.me/5591982161215">
-                      <Download className="w-4 h-4" />
+                      <Download className="w-3 h-3 sm:w-4 sm:h-4" />
                       Adquirir agora
                     </a>
                   </Button>
-                  <Button variant="outline" className="w-full" asChild>
+                  <Button variant="outline" className="w-full text-sm sm:text-base" asChild>
                     <a href="https://wa.me/5591982161215">
                       Saber mais
                     </a>
@@ -109,14 +109,14 @@ const Services = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center bg-white rounded-3xl p-8 md:p-12 shadow-card">
-          <div className="space-y-6 max-w-2xl mx-auto">
+        <div className="mt-12 sm:mt-16 text-center bg-white rounded-3xl p-6 sm:p-8 lg:p-12 shadow-card">
+          <div className="space-y-4 sm:space-y-6 max-w-2xl mx-auto">
             <h3 className="text-primary">Não encontrou o que procura?</h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
               Entre em contato conosco e descubra como podemos ajudar você com soluções 
               personalizadas para suas necessidades específicas.
             </p>
-            <Button variant="cta" size="lg" asChild>
+            <Button variant="cta" size="lg" asChild className="w-full sm:w-auto">
               <a href="https://wa.me/5591982161215">
                 Falar com especialista
               </a>

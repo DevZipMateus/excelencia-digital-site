@@ -19,13 +19,13 @@ const Header = () => {
       <div className="container-max section-padding">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2 sm:space-x-3">
             <img 
               src="/logo-excelencia-digital.jpg" 
               alt="Excelência Digital" 
-              className="w-10 h-10 rounded-lg object-cover"
+              className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg object-cover"
             />
-            <span className="text-xl font-bold text-primary">
+            <span className="text-lg sm:text-xl font-bold text-primary">
               Excelência Digital
             </span>
           </div>
@@ -44,21 +44,23 @@ const Header = () => {
           </nav>
 
           {/* Contact Info & Mobile Menu Button */}
-          <div className="flex items-center space-x-4">
-            <div className="hidden lg:flex items-center space-x-4 text-sm">
+          <div className="flex items-center space-x-2 sm:space-x-4">
+            <div className="hidden xl:flex items-center space-x-4 text-sm">
               <a 
                 href="mailto:jhonatanluid253@gmail.com"
                 className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-smooth"
               >
                 <Mail className="w-4 h-4" />
-                <span>jhonatanluid253@gmail.com</span>
+                <span className="hidden 2xl:inline">jhonatanluid253@gmail.com</span>
+                <span className="xl:inline 2xl:hidden">E-mail</span>
               </a>
               <a 
                 href="https://wa.me/5591982161215"
                 className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-smooth"
               >
                 <Phone className="w-4 h-4" />
-                <span>(91) 98216-1215</span>
+                <span className="hidden 2xl:inline">(91) 98216-1215</span>
+                <span className="xl:inline 2xl:hidden">WhatsApp</span>
               </a>
             </div>
 
