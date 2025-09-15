@@ -55,11 +55,11 @@ const Header = () => {
                 <span className="xl:inline 2xl:hidden">E-mail</span>
               </a>
               <a 
-                href="https://wa.me/5591982161215"
+                href="https://wa.me/91982593625"
                 className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-smooth"
               >
                 <Phone className="w-4 h-4" />
-                <span className="hidden 2xl:inline">(91) 98216-1215</span>
+                <span className="hidden 2xl:inline">(91) 98259-3625</span>
                 <span className="xl:inline 2xl:hidden">WhatsApp</span>
               </a>
             </div>
@@ -99,11 +99,11 @@ const Header = () => {
                   <span>jhonatanluid253@gmail.com</span>
                 </a>
                 <a 
-                  href="https://wa.me/5591982161215"
+                  href="https://wa.me/91982593625"
                   className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-smooth"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>(91) 98216-1215</span>
+                  <span>(91) 98259-3625</span>
                 </a>
                 <a 
                   href="https://www.instagram.com/janes26178?igsh=OTZzaWhsZDQxd2Z1&utm_source=ig_contact_invite"

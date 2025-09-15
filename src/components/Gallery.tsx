@@ -100,10 +100,10 @@ const Gallery = () => {
               às suas necessidades.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <a href="https://wa.me/5591982161215" className="btn-cta w-full sm:w-auto text-sm sm:text-base">
+              <a href="https://wa.me/91982593625" className="btn-cta w-full sm:w-auto text-sm sm:text-base">
                 Ver todos os produtos
               </a>
-              <a href="https://wa.me/5591982161215" className="btn-outline w-full sm:w-auto text-sm sm:text-base">
+              <a href="https://wa.me/91982593625" className="btn-outline w-full sm:w-auto text-sm sm:text-base">
                 Falar com especialista
               </a>
             </div>

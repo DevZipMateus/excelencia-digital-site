@@ -7,8 +7,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefone",
-      content: "(91) 98216-1215",
-      link: "https://wa.me/5591982161215",
+      content: "(91) 98259-3625",
+      link: "https://wa.me/91982593625",
       description: "WhatsApp disponível"
     },
     {
@@ -94,7 +94,7 @@ const Contact = () => {
                 </p>
               </div>
               <Button variant="hero" size="lg" asChild className="w-full">
-                <a href="https://wa.me/5591982161215">
+                <a href="https://wa.me/91982593625">
                   <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
                   Abrir WhatsApp
                 </a>

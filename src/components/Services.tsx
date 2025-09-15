@@ -92,13 +92,13 @@ const Services = () => {
 
                 <div className="pt-3 sm:pt-4 space-y-2 sm:space-y-3">
                   <Button variant="cta" className="w-full text-sm sm:text-base" asChild>
-                    <a href="https://wa.me/5591982161215">
+                    <a href="https://wa.me/91982593625">
                       <Download className="w-3 h-3 sm:w-4 sm:h-4" />
                       Adquirir agora
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full text-sm sm:text-base" asChild>
-                    <a href="https://wa.me/5591982161215">
+                    <a href="https://wa.me/91982593625">
                       Saber mais
                     </a>
                   </Button>
@@ -117,7 +117,7 @@ const Services = () => {
               personalizadas para suas necessidades específicas.
             </p>
             <Button variant="cta" size="lg" asChild className="w-full sm:w-auto">
-              <a href="https://wa.me/5591982161215">
+              <a href="https://wa.me/91982593625">
                 Falar com especialista
               </a>
             </Button>

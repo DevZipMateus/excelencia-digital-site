@@ -50,7 +50,7 @@ const Hero = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild className="w-full sm:w-auto border-white/30 text-white hover:bg-white hover:text-primary">
-                <a href="https://wa.me/5591982161215">
+                <a href="https://wa.me/91982593625">
                   Falar no WhatsApp
                 </a>
               </Button>

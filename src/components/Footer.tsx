@@ -59,11 +59,11 @@ const Footer = () => {
             <h3 className="font-semibold text-base sm:text-lg">Contato</h3>
             <div className="space-y-3 sm:space-y-4">
               <a 
-                href="https://wa.me/5591982161215"
+                href="https://wa.me/91982593625"
                 className="flex items-center justify-center sm:justify-start space-x-2 sm:space-x-3 text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
               >
                 <Phone className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
-                <span className="text-sm sm:text-base">(91) 98216-1215</span>
+                <span className="text-sm sm:text-base">(91) 98259-3625</span>
               </a>
               <a 
                 href="mailto:jhonatanluid253@gmail.com"
